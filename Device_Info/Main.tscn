@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=3 uid="uid://dxv8i4csrxaov"]
+
+[ext_resource type="Script" path="res://ru.gd" id="1_eev2t"]
+[ext_resource type="Script" path="res://eng.gd" id="2_2bojs"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Device ID Code" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="RU" type="Label" parent="Device ID Code"]
+layout_mode = 0
+offset_left = 386.0
+offset_top = 359.0
+offset_right = 649.0
+offset_bottom = 451.0
+text = "Test"
+horizontal_alignment = 1
+script = ExtResource("1_eev2t")
+
+[node name="ENG" type="Label" parent="Device ID Code"]
+layout_mode = 0
+offset_left = 387.0
+offset_top = 201.0
+offset_right = 718.0
+offset_bottom = 299.0
+text = "Test"
+horizontal_alignment = 1
+script = ExtResource("2_2bojs")
